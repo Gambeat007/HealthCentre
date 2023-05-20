@@ -7,6 +7,7 @@ import { useCallback, useEffect, useState } from "react";
 import { UserItem } from "./user_management/UserItem";
 import {
   AdminContainer,
+  AdminHeader,
   ButtonPanel,
   ButtonPanelTitle,
   DisplayContainer,
@@ -54,7 +55,7 @@ export const Admin = () => {
 
   return (
     <AdminContainer>
-      <StyledHeader>Panel administracyjny</StyledHeader>
+      <AdminHeader>Panel administracyjny</AdminHeader>
       <UserManagementContainer>
         <ButtonPanelTitle> Zarządzanie użytkownikami:</ButtonPanelTitle>
         <ButtonPanel>

@@ -1,11 +1,13 @@
 import styled from "styled-components";
-import { FONT_COLOR } from "constants/constants";
+import {DOCTOR_FONT_COLOR, FONT_COLOR} from "constants/constants";
 
 export const ScheduleContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
+  border-radius: 10px;
+  border: 1px solid ${DOCTOR_FONT_COLOR};
 `;
 
 export const ScheduleWrapper = styled.div`
@@ -22,7 +24,7 @@ export const LeftSide = styled.div`
   margin: 5px;
   justify-content: center;
   align-items: center;
-  border: 1px solid ${FONT_COLOR};
+  border: 1px solid ${DOCTOR_FONT_COLOR};
   border-radius: 8px;
 `;
 
@@ -42,7 +44,7 @@ export const RightSide = styled.div`
   margin: 5px;
   justify-content: center;
   align-items: center;
-  border: 1px solid ${FONT_COLOR};
+  border: 1px solid ${DOCTOR_FONT_COLOR};
   border-radius: 8px;
 `;
 
@@ -50,7 +52,6 @@ export const StyledHeading = styled.div`
   font-size: 20px;
   font-weight: 600;
   margin: 12px auto;
-  color: ${FONT_COLOR};
 `;
 
 export const ItemContainer = styled.div`
@@ -61,18 +62,17 @@ export const ItemContainer = styled.div`
 export const DataContainer = styled.div`
   display: flex;
   flex-direction: row;
-
   margin: 5px;
   border-radius: 8px;
   justify-content: center;
 `;
 
 export const InfoFree = styled.div`
-  width: 100%;
+  width: 110%;
   text-align: center;
   padding: 8px;
-  border: 1px solid ${FONT_COLOR};
-  color: ${FONT_COLOR};
+  border: 1px groove  ${DOCTOR_FONT_COLOR};
+  color: ${DOCTOR_FONT_COLOR};
   border-radius: 8px;
 `;
 
@@ -80,7 +80,7 @@ export const InfoUsed = styled.span`
   width: 100%;
   text-align: center;
   padding: 8px;
-  border: 1px solid red;
+  border: 1px solid ${FONT_COLOR};
   border-radius: 8px;
 `;
 

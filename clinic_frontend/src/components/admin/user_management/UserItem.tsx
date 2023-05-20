@@ -4,6 +4,7 @@ import {
   AdminButton,
   AdminButtonPanel,
   DataContainer,
+  DeleteUserButton,
   ImportantInfo,
   ItemContainer,
   LeftSide,
@@ -71,13 +72,13 @@ export const UserItem = (props: UserItemProps) => {
       {/* <>{createLineFromArray("Roles", user.roles.map((e) => e.))}</>  */}
       <AdminButtonPanel>
         <AdminButton>Zmodyfikuj dane użytkownika</AdminButton>
-        <AdminButton onClick={() => deleteUser(props.user.uuid)}>
+        <DeleteUserButton onClick={() => deleteUser(props.user.uuid)}>
           Usuń użytkownika{" "}
           {concatString([
             props.user.userAppDetails.firstName,
             props.user.userAppDetails.lastName,
           ])}
-        </AdminButton>
+        </DeleteUserButton>
       </AdminButtonPanel>
     </ItemContainer>
   );

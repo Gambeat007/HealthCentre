@@ -1,4 +1,4 @@
-import { FONT_COLOR } from "constants/constants";
+import {ADMIN_FONT_COLOR, FONT_COLOR} from "constants/constants";
 import styled from "styled-components";
 
 export const ItemContainer = styled.div`
@@ -61,6 +61,21 @@ export const AdminButton = styled.button`
   background-color: #24a0ed;
   border-radius: 8px;
   color: white;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+
+  &:hover {
+    filter: brightness(85%);
+  }
+`;
+
+export const DeleteUserButton = styled.button`
+  padding: 10px 16px;
+  border: 0;
+  background-color: ${ADMIN_FONT_COLOR};
+  border-radius: 8px;
+  color: #fff;
   font-weight: 600;
   font-size: 16px;
   cursor: pointer;

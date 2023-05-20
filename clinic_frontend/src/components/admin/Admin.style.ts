@@ -1,5 +1,13 @@
-import { FONT_COLOR } from "constants/constants";
+import { FONT_COLOR, ADMIN_FONT_COLOR } from "constants/constants";
 import styled from "styled-components";
+
+export const AdminHeader = styled.span`
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 64px;
+  margin-bottom: 25px;
+  color: ${ADMIN_FONT_COLOR};
+`;
 
 export const AdminContainer = styled.div`
   display: flex;
@@ -19,7 +27,7 @@ export const ButtonPanel = styled.div`
   justify-content: center;
   gap 20px;
   padding 20px;
-  border: 1px solid ${FONT_COLOR};
+  border: 1px solid ${ADMIN_FONT_COLOR};
   border-radius: 10px;
 `;
 
@@ -28,8 +36,8 @@ export const ButtonPanelTitle = styled.span`
   justify-content: center;
   font-size: 1.1em;
   font-weight: 600;
-  margin-top: 30px;
-  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
   gap 20px;
 `;
 
@@ -41,7 +49,7 @@ export const DisplayContainer = styled.div`
   margin-top: 40px;
   padding-bottom: 32px;
   border-radius: 10px;
-  border: 1px solid ${FONT_COLOR};
+  border: 1px solid ${ADMIN_FONT_COLOR};
 `;
 
 export const ItemsContainer = styled.div`

@@ -12,6 +12,7 @@ import { useNavigate } from "react-router-dom";
 import {
   MainPanelContainer,
   MainPanelWrapper,
+  DoctorHeader,
 } from "components/common/MainPanel.style";
 import {
   Center,
@@ -126,33 +127,33 @@ export const DoctorSchedule = () => {
   }
 
   return (
-    <MainPanelContainer>
-      <MainPanelWrapper>
-        <ScheduleContainer>
-          <StyledHeading>
-            {schedule?.date && formatDate(schedule.date)}
-          </StyledHeading>
-          <ScheduleWrapper>
-            <LeftSide onClick={onBeforeClicked}>
-              <ArrowLeftIcon style={{ height: "36px", width: "36px" }} />
-            </LeftSide>
-            <Center>
-              <ItemContainer>
-                {schedule?.items.map((s) => (
-                  <DoctorLineFromArray
-                    schedule={s}
-                    patientItems={patientItems as DictionaryItems}
-                    clinicItems={clinicItems as DictionaryItems}
-                  />
-                ))}
-              </ItemContainer>
-            </Center>
-            <RightSide onClick={onAfterClicked}>
-              <ArrowRightIcon style={{ height: "36px", width: "36px" }} />
-            </RightSide>
-          </ScheduleWrapper>
-        </ScheduleContainer>
-      </MainPanelWrapper>
-    </MainPanelContainer>
+      <>
+        <DoctorHeader>Harmonogram lekarski</DoctorHeader><MainPanelContainer>
+        <MainPanelWrapper>
+          <ScheduleContainer>
+            <StyledHeading>
+              {schedule?.date && formatDate(schedule.date)}
+            </StyledHeading>
+            <ScheduleWrapper>
+              <LeftSide onClick={onBeforeClicked}>
+                <ArrowLeftIcon style={{height: "36px", width: "36px"}}/>
+              </LeftSide>
+              <Center>
+                <ItemContainer>
+                  {schedule?.items.map((s) => (
+                      <DoctorLineFromArray
+                          schedule={s}
+                          patientItems={patientItems as DictionaryItems}
+                          clinicItems={clinicItems as DictionaryItems}/>
+                  ))}
+                </ItemContainer>
+              </Center>
+              <RightSide onClick={onAfterClicked}>
+                <ArrowRightIcon style={{height: "36px", width: "36px"}}/>
+              </RightSide>
+            </ScheduleWrapper>
+          </ScheduleContainer>
+        </MainPanelWrapper>
+      </MainPanelContainer></>
   );
 };

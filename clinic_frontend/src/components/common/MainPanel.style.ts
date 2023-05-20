@@ -1,12 +1,11 @@
 import styled from "styled-components";
-import { FONT_COLOR } from "constants/constants";
+import {ADMIN_FONT_COLOR, DOCTOR_FONT_COLOR, FONT_COLOR} from "constants/constants";
 
 export const MainPanelContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 25px;
-  color: ${FONT_COLOR};
 `;
 
 export const MainPanelWrapper = styled.div`
@@ -18,4 +17,14 @@ export const MainPanelWrapper = styled.div`
   background-color: #ffffff;
   justify-content: center;
   align-items: center;
+`;
+
+export const DoctorHeader = styled.span`
+  display: flex;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 64px;
+  margin-bottom: 25px;
+  color: ${DOCTOR_FONT_COLOR};
 `;
