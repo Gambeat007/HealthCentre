@@ -27,8 +27,8 @@ Some of application features:
 
     
     Logged user panel: doctor's panel
-![doctorPanel](https://github.com/Gambeat007/HealthCentre/assets/89457213/f5dc627e-86d1-4253-9b43-45dbfdbfbcf6)
-    
+![doctorPanel](https://github.com/Gambeat007/HealthCentre/assets/89457213/60b8e0a0-936d-4eb6-bdc1-11b90644c953)
+
     
     Logged user panel: admin's panel
-![adminPanel](https://github.com/Gambeat007/HealthCentre/assets/89457213/38fafe53-0a62-4402-830a-5e7e9717939e)
+![adminPanel](https://github.com/Gambeat007/HealthCentre/assets/89457213/878e1d99-b621-40ca-9b32-1c2db11731a1)
