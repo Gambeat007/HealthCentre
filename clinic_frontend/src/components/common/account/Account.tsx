@@ -44,11 +44,14 @@ export const Account = () => {
       setEmail(userDetails.data.email);
       setClinic(userDetails.data.clinic as string);
       setFirstName(userDetails.data.userAppDetails.firstName);
+      // @ts-ignore
       setSecondName(userDetails.data.userAppDetails.secondName);
       setLastName(userDetails.data.userAppDetails.lastName);
       setPesel(userDetails.data.userAppDetails.pesel);
+      // @ts-ignore
       setIdNumber(userDetails.data.userAppDetails.idNumber);
       setBirthDay(userDetails.data.userAppDetails.birthDay?.toLocaleString());
+      // @ts-ignore
       setNip(userDetails.data.userAppDetails.nip);
     }
   }, [currentUser?.username]);

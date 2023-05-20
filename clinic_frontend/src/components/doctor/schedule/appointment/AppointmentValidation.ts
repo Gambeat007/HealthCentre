@@ -11,20 +11,11 @@ export const isAppointmentValid = (value: any, field: string) => {
     case "recommendations":
       return !value === false;
     case "sickLeave":
-      return (
-        (value !== null && value.length === 0) ||
-        (!value === false && value.length <= 40)
-      );
+      return ((value !== null && value.length === 0) || (!!value && value.length <= 40));
     case "prescription":
-      return (
-        (value !== null && value.length === 0) ||
-        (!value === false && value.length <= 40)
-      );
+      return ((value !== null && value.length === 0) || (!!value && value.length <= 40));
     case "referral":
-      return (
-        (value !== null && value.length === 0) ||
-        (!value === false && value.length <= 40)
-      );
+      return ((value !== null && value.length === 0) || (!!value && value.length <= 40));
     default:
       return false;
   }
